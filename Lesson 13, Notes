@@ -1,0 +1,35 @@
+otam = {"ismi": "mavlutdin", "t_yili": 1954, "viloyati": "samarqand"}
+print(f''' Mening otamning ismi {otam['ismi'].capitalize()}, {otam['t_yili']} - yili 
+      {otam['viloyati'].title()} viloyatida tug\'ilganlar ''')
+
+sevimli_taomlar = {"akam": "osh", "dadam": "baliq", "onam": "sho'rva", 
+               "o'zim": "somsa",
+               "opam" : "shashlik"}
+
+#izohli_lugat = {'int': 'butun son qilib keltirib olish uchun ishlatiladi',
+                 'float': "sonlarni o'nli ko'rinishga o'tkazib olish uchun ishlatiladi", 
+                 'str': "matnlar yoki sonlarni tekst ko'rinishga o'tkazsih uchun ishlatiladi",
+                 'if': "agar degan ma'noni bildirib, tarmoqlanish uchun foydalaniladi",
+                 'else':"boshqa holatlarda degan ma'noni bildirib, barcha boshqa holatlarda ishaltiladi", 
+                 }
+print(izohli_lugat["int"])
+print(izohli_lugat["float"])
+
+izohli_lugat = {'int': 'butun son qilib keltirib olish uchun ishlatiladi',
+                'float': "sonlarni o'nli ko'rinishga o'tkazib olish uchun ishlatiladi", 
+               'str': "matnlar yoki sonlarni tekst ko'rinishga o'tkazish uchun ishlatiladi",
+                'if': "agar degan ma'noni bildirib, tarmoqlanish uchun foydalaniladi",
+                'else':"boshqa holatlarda degan ma'noni bildirib, barcha boshqa holatlarda ishaltiladi", }
+so_z = input("Xush kelibsiz. Python dasturlash tiliga aloqador bo'lgan biror-bir so'zni kiriting >>>")
+print(izohli_lugat.get(so_z, "Bunday atama ushbu lug'atda mavjud emas"))
+
+izohli_lugat = {'int': 'butun son qilib keltirib olish uchun ishlatiladi',
+                'float': "sonlarni o'nli ko'rinishga o'tkazib olish uchun ishlatiladi", 
+               'str': "matnlar yoki sonlarni tekst ko'rinishga o'tkazish uchun ishlatiladi",
+                'if': "agar degan ma'noni bildirib, tarmoqlanish uchun foydalaniladi",
+                'else':"boshqa holatlarda degan ma'noni bildirib, barcha boshqa holatlarda ishaltiladi", }
+so_z = input("Xush kelibsiz. Python dasturlash tiliga aloqador bo'lgan biror-bir so'zni kiriting >>>")
+if so_z in izohli_lugat:
+    print(f"{izohli_lugat[so_z]}")
+else:
+    print("Ushbu so'z bizning lug'atimizda mavjud emas")
